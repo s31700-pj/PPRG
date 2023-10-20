@@ -4,7 +4,6 @@ using namespace std;
 
 int i;
 int x;
-int y = 0;
 int a;
 int b;
 
@@ -58,6 +57,7 @@ int main()
 
     cout << "\n";
     cout << "Obwód prostokąta gwiazdek o wymiarach 'a' na 'b': " << endl;
+    cout << "\n";
 
     for (x = 0; x < b; x++) { 
 
@@ -71,28 +71,29 @@ int main()
 
         }
 
-            for (i = 0; i < a; i++) { 
+        for (i = 0; i < a-1; i++) { 
 
-                if (x == 0 || x == b - 1) {
-                    continue;
-                }
-
-                if (i == 0 || i == a - 1) { 
-
-                    cout << "*";
-                }
-                cout << " ";
-
+            if (x == 0 || x == b - 1) {
+                continue;
             }
-        cout << "\n";
-        cout << "";
 
+            if (i == 0 || i == a - 2) { 
+
+                cout << "*";
+            }
+            cout << " ";
+
+        }
+        
+        cout << "\n";
         
     }
+   
     cout << "\n";
     cout << "Trójkąt prostokątny równoramienny: \n";
+    cout << "\n";
     
-    for (i = 0; i < b; i++) {
+    for (i = 0; i < a; i++) {
 
         for (x = 0; x < a; x++) {
 
@@ -110,12 +111,13 @@ int main()
 
     cout << "\n";
     cout << "Odwrócony trójkąt prostokątny równoramienny: \n";
+    cout << "\n";
     
-    for (i = 0; i < b; i++) {
+    for (i = 0; i < a; i++) {
 
         for (x = 0; x < a; x++) {
             
-            if (x <= i-1 ) {
+            if (x <= i - 1) {
                 cout << " ";
             }
             else {
