@@ -59,11 +59,11 @@ int main()
     cout << "\n";
     cout << "Obwód prostokąta gwiazdek o wymiarach 'a' na 'b': " << endl;
 
-    for (x = 0; x < b; x++) { // poczatek petli i zakre
+    for (x = 0; x < b; x++) { 
 
-        if (x == 0 || x == b - 1) { // w przypadku dolu lub gory prostokata V
+        if (x == 0 || x == b - 1) { 
 
-            for (i = 0; i < a; i++) { // wypisz rzad * o dlugosci a 
+            for (i = 0; i < a; i++) {  
 
                 cout << "*";
 
@@ -71,13 +71,13 @@ int main()
 
         }
 
-            for (i = 0; i < a; i++) { // wypisz rzad " " o dlugosci a
+            for (i = 0; i < a; i++) { 
 
                 if (x == 0 || x == b - 1) {
                     continue;
                 }
 
-                if (i == 0 || i == a - 1) { // ale dla pierwszego i ostatniego miejsca wypisz *
+                if (i == 0 || i == a - 1) { 
 
                     cout << "*";
                 }
