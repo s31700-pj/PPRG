@@ -22,7 +22,7 @@ int main()
     }
     
   sort(tablica,tablica+rozmiar);
-  for(int i=0;i<rozmiar-1;i++)
+  for(i=0;i<rozmiar-1;i++)
   {
     if(tablica[i]==tablica[i+1])
       liczba++;
